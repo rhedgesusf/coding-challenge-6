@@ -58,3 +58,34 @@ const calculateBonus = (salary, performanceRating) => {
 console.log(`Bonus: $${calculateBonus(10000, "Excellent")}`);
 //Another example
 console.log(`Bonus: $${calculateBonus(1000, "Average")}`);
+
+///////////////////////////////////////
+// Task 4: Parameters and Arguments ///
+///////////////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 3: Arrow Function");
+
+function calculateSubscriptionCost(plan, months, discount = 0) {
+    let costPerMonth = 0;
+    switch (plan) {
+        case "Basic":
+            costPerMonth = 10;
+            break;
+        case "Premium":
+            costPerMonth = 20;
+            break;
+        case "Enterprise":
+            costPerMonth = 50;
+            break;
+    }
+    return months * costPerMonth * (1 - discount / 100); 
+}
+    
+console.log(`Subscription Cost: $${calculateSubscriptionCost("Enterprise", 24, 20)}`);
+// Another Example
+console.log(`Subscription Cost: $${calculateSubscriptionCost("Basic", 6, 5)}`);
+
+
+
+
