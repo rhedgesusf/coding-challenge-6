@@ -99,6 +99,22 @@ console.log(`Converted Currency: $${convertCurrency(1000, 5.20)}`);
 // Another Example
 console.log(`Converted Currency: $${convertCurrency(786, .97)}`);
 
+///////////////////////////////////
+// Task 6: High-Order Functions ///
+///////////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 6: High-Order Functions");
+
+let orders = [12, 1200, 210, 2100, 500];
+
+const applyBulkDiscount = (amount) => amount > 500 ? amount * .9 : amount;
+let discountOrders = orders.map(applyBulkDiscount);
+
+console.log("Bulk Discount:", discountOrders);
+
+
+
 
 
 
