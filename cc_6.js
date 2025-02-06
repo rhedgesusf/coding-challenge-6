@@ -86,6 +86,19 @@ console.log(`Subscription Cost: $${calculateSubscriptionCost("Enterprise", 24, 2
 // Another Example
 console.log(`Subscription Cost: $${calculateSubscriptionCost("Basic", 6, 5)}`);
 
+///////////////////////////////
+// Task 5: Returning Values ///
+///////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 5: Returning Values");
+
+const convertCurrency = (amount, exchangeRate) => amount * exchangeRate;
+
+console.log(`Converted Currency: $${convertCurrency(1000, 5.20)}`);
+// Another Example
+console.log(`Converted Currency: $${convertCurrency(786, .97)}`);
+
 
 
 
