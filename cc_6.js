@@ -118,10 +118,20 @@ console.log("Bulk Discount:", discountOrders);
 ///////////////////////
 
 console.log("--------------------------------------");
-console.log("Task 7: ");
+console.log("Task 7: Closures");
 
+function createExpenseTracker(){
+    let sum = 0;
+        return function(amount) {
+            sum += amount;
+            return sum;
+    };
+}
 
+let tracker = createExpenseTracker();
 
+console.log("Adding 200 to tracker:", tracker(200));
+console.log("Adding 150 to tracker:", tracker(150));
 
 
 
