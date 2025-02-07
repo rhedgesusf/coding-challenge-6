@@ -133,6 +133,23 @@ let tracker = createExpenseTracker();
 console.log("Adding 200 to tracker:", tracker(200));
 console.log("Adding 150 to tracker:", tracker(150));
 
+//////////////////////////////////////
+// Task 8: Recursion in JavaScript ///
+//////////////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 8: Recursion in JavaScript");
+
+function calculateYearsToPromotion(employeeLevel) {
+    let years = 0;
+    if (employeeLevel < 10){
+        years = calculateYearsToPromotion(employeeLevel + 1) + 2;
+    }
+    return years;
+}
+
+console.log("Years to Promotion for Employee lvl 7:", calculateYearsToPromotion(7))
+console.log("Years to Promotion for Employee lvl 5:", calculateYearsToPromotion(5))
 
 
 
