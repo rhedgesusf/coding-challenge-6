@@ -24,7 +24,7 @@ console.log("Task 2: Function Expression");
 // create function that calculates sales tax
 // input parameters are: total sales amount and taxrate (decimal format)
 const calculateSalesTax  = function(amount, taxRate) {
-    return amount * taxRate;
+    return (amount * taxRate).toFixed(2);
 };
 
 console.log(`Sales Tax: $${calculateSalesTax(100, .07)}`);
@@ -94,7 +94,7 @@ console.log("--------------------------------------");
 console.log("Task 5: Returning Values");
 
 // create arrow function to convert currency based on exchange rate
-const convertCurrency = (amount, exchangeRate) => amount * exchangeRate;
+const convertCurrency = (amount, exchangeRate) => (amount * exchangeRate).toFixed(2);
 
 console.log(`Converted Currency (100, 1.1): $${convertCurrency(100, 1.1)}`);
 console.log(`Converted Currency (250, .85): $${convertCurrency(250, .85)}`);
