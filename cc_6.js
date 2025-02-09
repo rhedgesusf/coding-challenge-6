@@ -66,7 +66,7 @@ console.log("--------------------------------------");
 console.log("Task 4: Arrow Function");
 
 // create a function that calculates subscription cost
-// input parameters are: plan type, number of months, and discount percentage (non-decimal)
+// input parameters are: plan type, number of months, and discount amount (in dollars)
 function calculateSubscriptionCost(plan, months, discount = 0) {
     let costPerMonth = 0;
     switch (plan) {
