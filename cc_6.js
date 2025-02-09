@@ -27,8 +27,8 @@ const calculateSalesTax  = function(amount, taxRate) {
     return (amount * taxRate).toFixed(2);
 };
 
-console.log(`Sales Tax: $${calculateSalesTax(100, .07)}`);
-console.log(`Sales Tax (500, .07): $${calculateSalesTax(500, .1)}`);
+console.log(`Sales Tax (100,.07): $${calculateSalesTax(100, .07)}`);
+console.log(`Sales Tax (500, .1): $${calculateSalesTax(500, .1)}`);
 
 /////////////////////////////
 // Task 3: Arrow Function ///
@@ -80,7 +80,7 @@ function calculateSubscriptionCost(plan, months, discount = 0) {
             costPerMonth = 50;
             break;
     }
-    return months * costPerMonth * (1 - discount / 100); 
+    return (months * costPerMonth) - discount; 
 }
     
 console.log(`Subscription Cost ("Basic", 6, 10): $${calculateSubscriptionCost("Basic", 6, 10)}`);
@@ -142,8 +142,8 @@ function createExpenseTracker(){
 // create expense tracker
 let tracker = createExpenseTracker();
 
-console.log("Adding 200 to tracker:", tracker(200));
-console.log("Adding 150 to tracker:", tracker(150));
+console.log(`Total Expenses (adding $200): $${tracker(200)}`);
+console.log(`Total Expenses (adding $150): $${tracker(150)}`);
 
 //////////////////////////////////////
 // Task 8: Recursion in JavaScript ///
